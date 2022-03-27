@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #e6edf7;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    width: 50%;
+}
+nav ul li{
+    margin: 20px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+
+}
+nav h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 50px;
+}
+.home-page{
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 97%;
+    width: 100vw;
+}
+.home-page .section-2{
+    background-image: url('c76314dc-fb55-4074-a6e3-d3eb5c10ed78.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+}
+.home-page .section-1{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 80px;
+    flex-direction: column;
+    font-family: 'Nunito';
+}
+.home-page .section-1 h2{
+    font-size: 2.7rem;
+    letter-spacing: 10px;
+    font-weight: 500;
+    color: #333;
+}
+.home-page .section-1 h1{
+    font-size: 3rem;
+    color: #333;
+    letter-spacing: 2px;
+}
+.home-page .section-1 p{
+    color: #727272;
+    line-height: 22px;
+    font-size: 0.9rem;
+    font-family: 'Nunito';
+    margin: 20px 0 ;
+    background-color: #f8fafc;
+    border-radius: 7px;
+    padding: 10px;
+}
+.home-page .section-1 .button-area{
+    padding: 10px 10px;
+}
+.home-page .section-1 .button-area #project-button{
+    width: 50%;
+    padding: 12px 24px;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: linear-gradient(140deg,#0d6ddf,#001ec1 80%);
+    font-family: 'Nunito';
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.home-page .section-1 .button-area #project-button:hover{
+    border-image-source: linear-gradient(140deg,#0d6ddf,#001ec1 80%);
+    border-image-slice: 1;
+    background: transparent;
+    color: black;
+    transition-duration: .5s;
+}
+main{
+    width: 95%;
+    margin: auto;
+}
+main .area1 h2{
+    border: 1px solid;
+    background-color: #366694;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Dongle';
+    font-size: 2.7rem;
+    border-radius: 20px;
+}
+.one , .two , .three , .four , .five , .six{
+    border-radius: 25px;
+}
+main .area1 .uses{
+    height: 420px;
+    width: 95%;
+    display: grid;
+    grid-gap: 5px;
+    padding: 15px;
+    grid-template-columns: auto auto ;
+    margin: auto;
+}
+main .area1 .uses .child{
+    padding: 5px;
+    margin: 5px;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: 2fr;
+    border-radius: 6px;
+}
+main .area1 .uses .child .hoo{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+    font-family: 'Nunito';
+    background-color: #eef1f2d8;
+}
+main .area1 .uses .child .hoo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+main .area1 .uses .child .hoo .hue h3{
+    letter-spacing: 2px;
+} 
+
+main .area2{
+    height: fit-content;
+    width: 95%;
+    display: grid;
+    grid-template-areas: 'types working'
+                         'commands working ';
+    grid-gap: 30px;
+    padding: 15px;
+    margin: auto;
+}
+main .area2 .box{
+    border-radius: 7px;
+    padding: 15px;
+    font-family: 'Nunito';
+}
+main .area2 .box h3{
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+}
+main .area2 .box p{
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 22px;
+}
+main .area2 .types{
+    grid-area: types;
+    background-color: #d9e9ff;
+}
+main .area2 .working{
+    grid-area: working;
+    background-color: #40957a;
+    color: #f5f5f5;
+}
+main .area2 .commands{
+    grid-area: commands;
+    background-color: #f2f6f8;
+}
+main .area2 .working button{
+    padding: 10px 30px;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+    border: 2px solid white;
+    font-family: 'Nunito';
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+#project-button a{
+    text-decoration: none;
+    color: white;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+#project-button:hover a{
+    color: black;
+}
+
+
+
